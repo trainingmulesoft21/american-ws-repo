@@ -34,7 +34,7 @@ payload map ( payload01 , indexOfPayload01 ) -> {
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="c75274f7-d252-4838-926e-07f9606b9114" message="#[payload]" />
+		<logger level="INFO" doc:name="Logger" doc:id="c75274f7-d252-4838-926e-07f9606b9114" message="#[payload]" category="com.american"/>
 	</flow>
 	<flow name="getFlightsByID" doc:id="9971a815-871d-4657-ac5b-b86814904ff2" >
 		<db:select doc:name="American Flights Data Based on ID" doc:id="6fa1c80c-564f-41f2-898d-a0b6f2f831ae" config-ref="Database_Config" >
